@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../core/values/app_values.dart';
+import '../../../core/values/text_styles.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -26,6 +27,7 @@ class HomeView extends GetView<HomeController> {
                 Get.toNamed(controller.menuItem[index].route);
               },
               child: Card(
+                color: Color(controller.menuItem[index].bgColor),
                 child: Container(
                   alignment: Alignment.center,
                   child: Column(
@@ -35,7 +37,11 @@ class HomeView extends GetView<HomeController> {
                         controller.menuItem[index].image,
                         width: 60,
                       ),
-                      Text(controller.menuItem[index].name),
+                      const SizedBox(height: 5),
+                      Text(
+                        controller.menuItem[index].name,
+                        style: titleStyle,
+                      ),
                     ],
                   ),
                 ),
