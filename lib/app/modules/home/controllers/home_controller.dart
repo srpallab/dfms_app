@@ -1,4 +1,5 @@
 import 'package:dfms/app/core/values/images.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../model/menu_items.dart';
@@ -9,55 +10,79 @@ class HomeController extends GetxController {
       name: "Cattle",
       route: "/cattle",
       image: MyImages.cattleImage,
-      bgColor: 0xFF1ABC9C,
+      bgColor: [Colors.red, Colors.orange],
     ),
     MyMenuItems(
       name: "Customer",
       route: "/customer",
       image: MyImages.customerImage,
-      bgColor: 0xFF16A085,
+      bgColor: [
+        Colors.blue,
+        Colors.purple,
+      ],
     ),
     MyMenuItems(
       name: "Medicine",
       route: "/medicine",
       image: MyImages.medicineImage,
-      bgColor: 0xFFF1C40F,
+      bgColor: [
+        Colors.yellow,
+        Colors.green,
+      ],
     ),
     MyMenuItems(
       name: "Food",
       route: "/food",
       image: MyImages.foodImage,
-      bgColor: 0xFFF39C12,
+      bgColor: [
+        Colors.teal,
+        Colors.blue,
+      ],
     ),
     MyMenuItems(
       name: "POS",
       route: "/pos",
       image: MyImages.posImage,
-      bgColor: 0xFF3498DB,
+      bgColor: [
+        Colors.orange,
+        Colors.pink,
+      ],
     ),
     MyMenuItems(
       name: "Pregnancy",
       route: "/pregnancy",
       image: MyImages.pregnancyImage,
-      bgColor: 0xFF2980B9,
+      bgColor: [
+        Colors.green,
+        Colors.teal,
+      ],
     ),
     MyMenuItems(
       name: "Report",
       route: "/report",
       image: MyImages.reportImage,
-      bgColor: 0xFFE74C3C,
+      bgColor: [
+        Colors.purple,
+        Colors.pink,
+      ],
     ),
     MyMenuItems(
       name: "Stock",
       route: "/stock",
       image: MyImages.stockImage,
-      bgColor: 0xFFBDC3C7,
+      bgColor: [
+        Colors.blue,
+        Colors.teal,
+      ],
     ),
     MyMenuItems(
       name: "Vaccination",
       route: "/vaccination",
       image: MyImages.vaccinationImage,
-      bgColor: 0xFF00BCD4,
+      bgColor: [
+        Colors.yellow,
+        Colors.orange,
+      ],
     ),
   ];
 }

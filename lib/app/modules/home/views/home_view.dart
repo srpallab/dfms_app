@@ -27,9 +27,15 @@ class HomeView extends GetView<HomeController> {
                 Get.toNamed(controller.menuItem[index].route);
               },
               child: Card(
-                color: Color(controller.menuItem[index].bgColor),
                 child: Container(
                   alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: controller.menuItem[index].bgColor,
+                    ),
+                  ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
